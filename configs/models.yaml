@@ -1,0 +1,28 @@
+abuse:
+  backend: "sklearn"
+  labels: ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
+  sklearn:
+    vectorizer_max_features: 30000
+    c: 2.0
+
+crisis:
+  backend: "sklearn"
+  sklearn:
+    vectorizer_max_features: 20000
+    c: 1.0
+
+escalation:
+  ewma_alpha: 0.3
+  slope_window: 5
+  risk_floor: 0.05
+
+content_filter:
+  age_classes: ["7+", "13+", "16+", "18+"]
+  rules:
+    sexual_keywords: ["sex", "nude", "xxx", "porn"]
+    violence_keywords: ["kill", "murder", "blood"]
+    substances_keywords: ["alcohol", "vodka", "weed"]
+  classifier:
+    backend: "sklearn"
+    vectorizer_max_features: 15000
+    c: 1.0

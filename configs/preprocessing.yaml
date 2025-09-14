@@ -1,0 +1,18 @@
+language_detection:
+  enabled: true
+  languages: ["en", "hi"]
+
+normalization:
+  lower: true
+  strip_urls: true
+  strip_punctuation: true
+  collapse_whitespace: true
+  unicode_nfkc: true
+
+pii_masking:
+  enabled: true
+  mask_email: true
+  mask_phone: true
+  mask_name: false  # optional: requires NER
+  email_token: "<EMAIL>"
+  phone_token: "<PHONE>"

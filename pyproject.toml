@@ -1,0 +1,24 @@
+[project]
+name = "ai-safety-monitoring"
+version = "0.1.0"
+description = "AI safety system for real-time chat monitoring"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "joblib==1.4.2",
+    "langdetect==1.0.9",
+    "matplotlib==3.9.0",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "pytest==8.3.1",
+    "pyyaml==6.0.2",
+    "regex==2024.7.24",
+    "scikit-learn==1.5.1",
+    "seaborn==0.13.2",
+    "streamlit==1.37.0",
+    "torch>=2.2.0",
+    "tqdm==4.66.4",
+    "transformers==4.43.3",
+    "typing-extensions>=4.11.0",
+    "unicodedata2==15.1.0",
+]

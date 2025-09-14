@@ -1,0 +1,27 @@
+# Core ML & NLP
+scikit-learn==1.5.1
+pandas==2.2.2
+numpy==1.26.4
+transformers==4.43.3
+torch>=2.2.0
+
+# Preprocessing & Language Detection
+langdetect==1.0.9
+regex==2024.7.24
+unicodedata2==15.1.0  # Optional: for consistent Unicode normalization
+
+# Config & Logging
+pyyaml==6.0.2
+joblib==1.4.2
+tqdm==4.66.4
+
+# UI & Visualization
+streamlit==1.37.0
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# Testing
+pytest==8.3.1
+
+# Optional: for type hints and dev tools
+typing_extensions>=4.11.0

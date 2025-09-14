@@ -1,0 +1,40 @@
+thresholds:
+  abuse:
+    toxic: 0.3
+    threat: 0.2
+    insult: 0.25
+    obscene: 0.2
+    severe_toxic: 0.2
+    identity_hate: 0.2
+  crisis: 0.5
+  escalation:
+    ewma_threshold: 0.5
+    high_risk_slope: 0.1
+
+
+actions:
+  allow_max_risk: 0.4
+  warn_max_risk: 0.7
+  redact_labels: ["sexual", "self_harm", "suicide", "harm"]
+  block_labels: ["threat", "crisis"]
+
+routing:
+  route_to_human_if_crisis: true
+  route_if_blocked: true
+
+age_rules:
+  "7+":
+    prohibit: ["sexual", "violence", "substances"]
+  "13+":
+    caution: ["sexual", "violence", "substances"]
+  "16+":
+    caution: ["sexual"]
+  "18+":
+    caution: []
+
+fairness:
+  identity_terms: ["muslim", "hindu", "christian", "dalit", "woman", "man", "gay", "lesbian"]
+  disparity_alert: 0.15
+
+explainability:
+  include_top_features: true
