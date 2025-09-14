@@ -4,7 +4,7 @@ A machine learning system for detecting abuse and crisis signals in text content
 
 ## Web App Preview
 ![poc](poc.png)
-![poc](poc.gif)
+
 ## Project Setup
 
 ### Prerequisites
@@ -138,6 +138,8 @@ To launch the Streamlit web interface:
 streamlit run app.py
 ```
 The app will be available at `localhost:` e.g. http://localhost:8501
+
+![poc](poc.gif)
 
 ## Configuration
 
